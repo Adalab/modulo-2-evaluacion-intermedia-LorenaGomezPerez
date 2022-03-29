@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <h1>Dados y apuestas</h1>
-    <h2>Introduce aquí tu jugada</h2>
-    <select class="js-number" name="" id="">
-      que número apuestas
-      <option value="">1</option>
-      <option value="">2</option>
-      <option value="">3</option>
-      <option value="">4</option>
-      <option value="">5</option>
-      <option value="">6</option>
-    </select>
-    <label for="name"></label>
-    <input
-      type="text"
-      id="bet"
-      name="bet"
-      required
-      placeholder="¿Cuánto apuestas?"
-    />
-
-    <button class="button js-button">Jugar</button>
-    <span class="js-play">Vamos a jugar!</span>
-    <p>Saldo:50</p>
+    <main class="game-bet">
+      <h1 class="title">Dados y apuestas</h1>
+      <h2 class="subtitle">Introduce aquí tu jugada</h2>
+      <div class="container-play">
+        <select class="js-number" name="number" id="number">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+        </select>
+        <label for="name"></label>
+        <input
+          type="text"
+          id="bet"
+          name="bet"
+          required
+          placeholder="¿Cuánto apuestas?"
+        />
+        <button class="button js-button">Jugar</button>
+      </div>
+      <p class="play js-play">Vamos a jugar!</p>
+      <p class="money js-money-balance">Saldo: 50</p>
+    </main>
 
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
