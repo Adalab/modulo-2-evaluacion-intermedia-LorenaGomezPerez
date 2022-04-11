@@ -5,7 +5,6 @@
 const playButton = document.querySelector(".js-button");
 const selectNumber = document.querySelector(".js-number");
 const textPlay = document.querySelector(".js-play");
-const randomNumber = getRandomNumber(6);
 const balance = document.querySelector(".js-money-balance");
 
 
@@ -18,11 +17,8 @@ const balance = document.querySelector(".js-money-balance");
   } 
 
     function chooseNumber(){
+      const randomNumber = getRandomNumber(6);
       const number = parseInt(selectNumber.value);
-
-
-      // Condicional
-
 
    if (number === randomNumber){
       textPlay.innerHTML = "Has ganado el doble de lo apostado";
@@ -35,23 +31,11 @@ const balance = document.querySelector(".js-money-balance");
 
     function handleButton (event){
        event.preventDefault();
+       getRandomNumber();
        chooseNumber();
-   }
+   } 
 
     playButton.addEventListener("click", handleButton);
-
-    // Cambiar saldo (soy incapaz de hacer el Bonus)
-
-    function balanceChange (balance){
-        return balance;
-
-    if (number === randomNumber){
-            balance.innerHTML = "saldo $(amount*2)";
-        }
-
-
-
-    } 
 
 
  
